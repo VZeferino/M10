@@ -1,0 +1,134 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "ListAPI",
+    "collectionId": "a77102d5-ddf1-4a8e-94a0-bb9ff3aa55b2",
+    "dateExported": "2024-04-22T13:11:22.558Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "b9c2c9c1-103f-447a-a542-175cf54e0c12",
+            "name": "tasks",
+            "containerId": "",
+            "created": "2024-04-22T13:03:39.537Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "f52d9bc1-d8d1-4a42-be96-f4fbaef2938f",
+            "colId": "a77102d5-ddf1-4a8e-94a0-bb9ff3aa55b2",
+            "containerId": "b9c2c9c1-103f-447a-a542-175cf54e0c12",
+            "name": "read-all",
+            "url": "http://localhost:5000/tasks",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-22T13:03:53.689Z",
+            "modified": "2024-04-22T13:04:39.953Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user1",
+                    "password": "senha1"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "55bd54c3-ed2a-41ad-97c2-42d58ac0041b",
+            "colId": "a77102d5-ddf1-4a8e-94a0-bb9ff3aa55b2",
+            "containerId": "b9c2c9c1-103f-447a-a542-175cf54e0c12",
+            "name": "create",
+            "url": "http://localhost:5000/tasks",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-22T13:05:13.160Z",
+            "modified": "2024-04-22T13:06:10.502Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Fazer a collection\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user1",
+                    "password": "senha1"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "f2565bea-2a9f-4203-aef3-bb48d2107c1d",
+            "colId": "a77102d5-ddf1-4a8e-94a0-bb9ff3aa55b2",
+            "containerId": "b9c2c9c1-103f-447a-a542-175cf54e0c12",
+            "name": "read-one",
+            "url": "http://localhost:5000/tasks/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-22T13:06:33.401Z",
+            "modified": "2024-04-22T13:06:51.430Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user1",
+                    "password": "senha1"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "a4ddace6-bfa8-46c2-a73d-0cf66cd8a487",
+            "colId": "a77102d5-ddf1-4a8e-94a0-bb9ff3aa55b2",
+            "containerId": "b9c2c9c1-103f-447a-a542-175cf54e0c12",
+            "name": "edit",
+            "url": "http://localhost:5000/tasks/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-04-22T13:07:14.963Z",
+            "modified": "2024-04-22T13:08:52.204Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Escreva aqui a mudança\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user1",
+                    "password": "senha1"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "ae0934ff-6382-4ed0-a97c-5cd7f2db918d",
+            "colId": "a77102d5-ddf1-4a8e-94a0-bb9ff3aa55b2",
+            "containerId": "b9c2c9c1-103f-447a-a542-175cf54e0c12",
+            "name": "delete",
+            "url": "http://localhost:5000/tasks/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-04-22T13:08:59.669Z",
+            "modified": "2024-04-22T13:09:19.271Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user1",
+                    "password": "senha1"
+                }
+            },
+            "tests": []
+        }
+    ],
+    "ref": "IXjk3iwCe6pKU-bxxM1S6ihrw4H7y3lZagMdllVoI-NwFKwtPoUYGQrBkvTKUwBvq2ZgppLLsFR1TNgRPDWFLA"
+}

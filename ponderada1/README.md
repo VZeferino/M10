@@ -29,3 +29,5 @@ A aplicação estará acessível em `http://localhost:5000/`.
 
 A documentação completa da API, incluindo todos os endpoints disponíveis, está acessível via Swagger UI em `http://localhost:5000/docs`.
 ![image](https://github.com/VZeferino/M10/assets/99190423/2c5abd46-ffda-4e22-b6d5-bd00bd9ae0eb)
+
+Também há uma collection feita em uma extensão do github "Thunder Client" para maior organização e facilidade.
