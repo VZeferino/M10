@@ -31,3 +31,5 @@ A documentação completa da API, incluindo todos os endpoints disponíveis, est
 ![image](https://github.com/VZeferino/M10/assets/99190423/2c5abd46-ffda-4e22-b6d5-bd00bd9ae0eb)
 
 Também há uma collection feita em uma extensão do github "Thunder Client" para maior organização e facilidade.
+![image](https://github.com/VZeferino/M10/assets/99190423/84e94b4b-dcd3-4ad7-9ae4-5997a6b024c3)
+
