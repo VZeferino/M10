@@ -1,6 +1,6 @@
-# API de Lista de Tarefas
+# API de Lista de Tarefas - Teste de Carga
 
-Uma API RESTful simples para gerenciamento de tarefas, construída com Flask e Flask-RESTful. Permite criar, listar, atualizar e deletar tarefas. Implementa autenticação básica HTTP para todas as operações.
+Uma API RESTful simples para gerenciamento de tarefas, construída com Flask e Flask-RESTful. Permite criar, listar, atualizar e deletar tarefas. Implementa autenticação básica HTTP para todas as operações e agora vamos testar.
 
 ## Começando
 
@@ -12,10 +12,11 @@ Estas instruções irão te ajudar a configurar uma cópia do projeto em execuç
 - Flask
 - Flask-RESTful
 - Flask-HTTPAuth
+- Flask_Swagger_ui
 
 ### Executando a aplicação
 
-Para iniciar o servidor Flask em modo de desenvolvimento, execute:
+Para iniciar o servidor Flask, execute:
 
 ```
 python3 app.py
@@ -25,9 +26,22 @@ A aplicação estará acessível em `http://localhost:5000/`.
 ![image](https://github.com/VZeferino/M10/assets/99190423/47bdbdbd-7257-4616-86f0-dffe906869ed)
 
 
-### Documentação da API
+### Testes de Carga
 
-A documentação completa da API, incluindo todos os endpoints disponíveis, está acessível via Swagger UI em `http://localhost:5000/docs`.
-![image](https://github.com/VZeferino/M10/assets/99190423/2c5abd46-ffda-4e22-b6d5-bd00bd9ae0eb)
+Realizamos um teste de carga na funcionalidade de criação de tarefas da nossa aplicação para garantir que o sistema possa lidar com um volume alto de requisições simultâneas. Este teste é crucial para verificar a estabilidade e a escalabilidade do nosso serviço em condições de uso intenso.
 
-Também há uma collection feita em uma extensão do github "Thunder Client" para maior organização e facilidade.
+#### Detalhes
+
+- Endpoint Testado: /tasks
+- Método: POST
+- Carga de Teste: 100 requisições
+- Dados Enviados: Cada requisição enviou um JSON para criação de uma nova tarefa.
+- Autenticação: Cada requisição incluiu cabeçalhos de autenticação com usuário e senha válidos.
+
+O teste foi conduzido utilizando jmeter que permite simular e monitorar a resposta do servidor.
+
+#### Resultados
+
+Os resultados do teste de carga indicam como o sistema se comporta sob estresse. Os dados detalhados do teste estão disponíveis no arquivo summary.csv, incluído no diretório do projeto dentro da pasta static. Este relatório inclui tempos de resposta, taxa de erro das requisições, e outras métricas relevantes.
+
+Para visualizar, você pode clicar [aqui](https://github.com/VZeferino/M10/blob/main/ponderada2/static/summary.csv)
