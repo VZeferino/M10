@@ -8,17 +8,18 @@ Estas instruções irão te ajudar a configurar uma cópia do projeto em execuç
 
 ### Pré-requisitos
 
-- Python 3.6 ou superior
-- Flask
-- Flask-RESTful
-- Flask-HTTPAuth
+Antes de iniciar, você precisará ter instalado em sua máquina as seguintes ferramentas:
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+Isso é necessário para criar o ambiente de contêineres e rodar a aplicação utilizando o Docker Compose.
 
 ### Executando a aplicação
 
-Para iniciar o servidor Flask em modo de desenvolvimento, execute:
+Para iniciar o container, execute:
 
 ```
-python3 app.py
+docker compose up 
 ```
 
 A aplicação estará acessível em `http://localhost:5000/`.
