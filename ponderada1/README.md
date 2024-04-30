@@ -34,3 +34,10 @@ A documentação completa da API, incluindo todos os endpoints disponíveis, est
 Também há uma collection feita em uma extensão do github "Thunder Client" para maior organização e facilidade.
 ![image](https://github.com/VZeferino/M10/assets/99190423/84e94b4b-dcd3-4ad7-9ae4-5997a6b024c3)
 
+## Comparação Flask x FastAPI
+
+Flask é ideal para projetos menores ou quando a simplicidade é prioritária, já que é fácil de aprender e implementar. Por outro lado, FastAPI é mais adequado para ambientes modernos onde o desempenho e a eficiência são essenciais, por ser uma solução assíncrona que melhora significativamente o manejo de requisições simultâneas. 
+
+A escolha entre Flask e FastAPI depende principalmente das necessidades do projeto e da capacidade de lidar com concorrência.
+
+O arquivo do servidor em Fastapi é chamado "newapi".
