@@ -22,7 +22,12 @@ Para iniciar o container, execute:
 docker compose up 
 ```
 
-A aplicação estará acessível em `http://localhost:5000/`.
+A aplicação estará acessível em `http://localhost:5000/docs` (servidor em flask). Também em `http://localhost:8000/docs` (servidor em fastapi)
+
+![image](https://github.com/VZeferino/M10/assets/99190423/e3b932c3-dc33-41b5-bedd-d5e7e10cfe85)
+
+### Teste de que a roda está funcionando
+
 ![image](https://github.com/VZeferino/M10/assets/99190423/47bdbdbd-7257-4616-86f0-dffe906869ed)
 
 
