@@ -12,7 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Informar a porta que será exposta pelo container
-EXPOSE 5000
+EXPOSE 5000 8000
 
-# Comando para executar a aplicação
-CMD ["flask", "run", "--host=0.0.0.0"]
+# Comando para executar a aplicação está no compose

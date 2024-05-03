@@ -1,33 +1,35 @@
 from fastapi import FastAPI, HTTPException, Depends, status
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from passlib.context import CryptContext
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 app = FastAPI(title="List")
 
-# Usuários e suas senhas (simulando um banco de dados)
-users_db = {
-    "user1": "senha1",
-    "user2": "senha2"
-}
-
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 security = HTTPBasic()
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+users_db = {
+    "user1": pwd_context.hash("senha1"),
+    "user2": pwd_context.hash("senha2")
+}
 
 def authenticate_user(credentials: HTTPBasicCredentials = Depends(security)):
     username = credentials.username
     password = credentials.password
-    if username in users_db and pwd_context.verify(password, users_db[username]):
-        return username
-    else:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid authentication credentials",
-            headers={"WWW-Authenticate": "Basic"},
-        )
+    print(f"Authenticating user: {username} with password: {password}")
+    if username in users_db:
+        is_valid = pwd_context.verify(password, users_db[username])
+        print(f"Is password valid? {is_valid}")
+        if is_valid:
+            return username
+    raise HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Invalid authentication credentials",
+        headers={"WWW-Authenticate": "Basic"},
+    )
 
 class Task(BaseModel):
-    id: int
+    id: int = Field(default=None, exclude=True)
     title: str
 
 tasks = []
@@ -39,7 +41,7 @@ def read_tasks(user: str = Depends(authenticate_user)):
 @app.post("/tasks", response_model=Task)
 def create_task(task: Task, user: str = Depends(authenticate_user)):
     task.id = len(tasks) + 1
-    tasks.append(task)
+    tasks.append(task.dict())
     return task
 
 @app.get("/tasks/{task_id}", response_model=Task)

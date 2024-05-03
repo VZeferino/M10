@@ -1,11 +1,19 @@
 version: '3.8'
 services:
-  web:
+  app:
     build: .
     ports:
       - "5000:5000"
     environment:
       - FLASK_ENV=development
       - FLASK_APP=app.py
-    volumes:
-      - .:/app
+    command: flask run --host=0.0.0.0 --port=5000
+
+  newapp:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - UVICORN_HOST=0.0.0.0
+      - UVICORN_PORT=8000
+    command: uvicorn newapp:app --host 0.0.0.0 --port 8000 --reload
