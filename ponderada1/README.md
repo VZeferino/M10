@@ -27,8 +27,11 @@ A aplicação estará acessível em `http://localhost:5000/docs` (servidor em fl
 ![image](https://github.com/VZeferino/M10/assets/99190423/e3b932c3-dc33-41b5-bedd-d5e7e10cfe85)
 
 ### Teste de que a roda está funcionando
-
+#### FLASK
 ![image](https://github.com/VZeferino/M10/assets/99190423/47bdbdbd-7257-4616-86f0-dffe906869ed)
+
+##### FASTAPI
+![image](https://github.com/VZeferino/M10/assets/99190423/fd677da6-b110-43bc-aa41-13a84af24a65)
 
 
 ### Documentação da API
