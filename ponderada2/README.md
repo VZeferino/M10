@@ -1,47 +1,36 @@
-# API de Lista de Tarefas - Teste de Carga
+# API de Gerenciamento de Tarefas
 
-Uma API RESTful simples para gerenciamento de tarefas, construída com Flask e Flask-RESTful. Permite criar, listar, atualizar e deletar tarefas. Implementa autenticação básica HTTP para todas as operações e agora vamos testar.
+Uma API RESTful para gerenciamento de tarefas, construída com Flask. Esta API permite listar, adicionar, editar e remover tarefas com autenticação básica HTTP.
 
 ## Começando
 
-Estas instruções irão te ajudar a configurar uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste.
+Estas instruções fornecerão uma cópia do projeto rodando em sua máquina local para desenvolvimento e teste.
 
 ### Pré-requisitos
 
-- Python 3.6 ou superior
-- Flask
-- Flask-RESTful
-- Flask-HTTPAuth
-- Flask_Swagger_ui
+Para executar este projeto, você precisará do seguinte:
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
 ### Executando a aplicação
 
-Para iniciar o servidor Flask, execute:
+Para iniciar o ambiente utilizando Docker Compose, execute:
 
+```bash
+docker compose up
 ```
-python3 app.py
-```
 
-A aplicação estará acessível em `http://localhost:5000/`.
-![image](https://github.com/VZeferino/M10/assets/99190423/47bdbdbd-7257-4616-86f0-dffe906869ed)
+Após executar, a API estará acessível via http://localhost:5000/.
 
+## App Mobile em Flutter
+A aplicação móvel em Flutter permite interagir com a API para adicionar, editar e excluir tarefas. Para rodar a aplicação no Android, conecte seu dispositivo ao computador ou utilize um simulador.
 
-### Testes de Carga
+## Demonstração
+Um vídeo demonstrativo das funcionalidades da aplicação foi produzido. Para acessar clique [aqui](https://youtu.be/jmXzh1bQZ2o?si=nbF49r2hd2HdNqwV)
 
-Realizamos um teste de carga na funcionalidade de criação de tarefas da nossa aplicação para garantir que o sistema possa lidar com um volume alto de requisições simultâneas. Este teste é crucial para verificar a estabilidade e a escalabilidade do nosso serviço em condições de uso intenso.
+## Documentação
+A documentação completa da API está disponível via Swagger UI em http://localhost:5000/docs, onde você pode testar todas as operações diretamente.
 
-#### Detalhes
+## Desenvolvimento
+Este projeto foi desenvolvido considerando a eficiência e praticidade para gestão de tarefas simples. A escolha entre uma arquitetura de microserviços ou monolítica e entre sincronia ou assincronia deve ser baseada nas necessidades específicas de uso. Eu escolhi a que eu escolhi por ser mais simples :) 
 
-- Endpoint Testado: /tasks
-- Método: POST
-- Carga de Teste: 100 requisições
-- Dados Enviados: Cada requisição enviou um JSON para criação de uma nova tarefa.
-- Autenticação: Cada requisição incluiu cabeçalhos de autenticação com usuário e senha válidos.
-
-O teste foi conduzido utilizando jmeter que permite simular e monitorar a resposta do servidor.
-
-#### Resultados
-
-Os resultados do teste de carga indicam como o sistema se comporta sob estresse. Os dados detalhados do teste estão disponíveis no arquivo summary.csv, incluído no diretório do projeto dentro da pasta static. Este relatório inclui tempos de resposta, taxa de erro das requisições, e outras métricas relevantes.
-
-Para visualizar, você pode clicar [aqui](https://github.com/VZeferino/M10/blob/main/ponderada2/static/summary.csv)
