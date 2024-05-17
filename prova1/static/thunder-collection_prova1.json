@@ -1,0 +1,131 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "prova1",
+    "collectionId": "6b06135b-8230-4124-8066-cda97ee92224",
+    "dateExported": "2024-05-17T13:02:09.792Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "afa78c28-5ec0-4507-aecb-2cdf3ee2c6f7",
+            "name": "novo",
+            "containerId": "",
+            "created": "2024-05-17T12:47:03.617Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "5f3b78a0-0ab9-4bdb-afd2-a1a811c37355",
+            "name": "pedidos",
+            "containerId": "",
+            "created": "2024-05-17T12:51:06.815Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "30614347-fc16-4e03-aa7c-a785b540ff88",
+            "name": "pedidos/id",
+            "containerId": "",
+            "created": "2024-05-17T13:01:52.267Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ba6330f7-deda-4fad-9668-c71c6a596c83",
+            "colId": "6b06135b-8230-4124-8066-cda97ee92224",
+            "containerId": "afa78c28-5ec0-4507-aecb-2cdf3ee2c6f7",
+            "name": "criar",
+            "url": "http://localhost:5000/novo",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-05-17T12:40:40.884Z",
+            "modified": "2024-05-17T12:59:19.264Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Vitor\",\n  \"email\":\"vitor@gmail.com\",\n  \"pedido\":\"entregar isso\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user1",
+                    "password": "senha1"
+                }
+            }
+        },
+        {
+            "_id": "b2773068-5228-4408-9e4e-22ee8fcc9488",
+            "colId": "6b06135b-8230-4124-8066-cda97ee92224",
+            "containerId": "30614347-fc16-4e03-aa7c-a785b540ff88",
+            "name": "ler/id",
+            "url": "http://localhost:5000/pedidos/2",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-17T13:00:59.347Z",
+            "modified": "2024-05-17T13:01:10.830Z",
+            "headers": []
+        },
+        {
+            "_id": "7b5480de-c0f2-48dc-82b4-d0b7a8e70f2e",
+            "colId": "6b06135b-8230-4124-8066-cda97ee92224",
+            "containerId": "5f3b78a0-0ab9-4bdb-afd2-a1a811c37355",
+            "name": "ler",
+            "url": "http://localhost:5000/pedidos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-17T12:51:15.187Z",
+            "modified": "2024-05-17T13:01:07.667Z",
+            "headers": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user1",
+                    "password": "senha1"
+                }
+            }
+        },
+        {
+            "_id": "44d365e4-6dc1-44df-8a10-e07f81c2461d",
+            "colId": "6b06135b-8230-4124-8066-cda97ee92224",
+            "containerId": "30614347-fc16-4e03-aa7c-a785b540ff88",
+            "name": "editar/id",
+            "url": "http://localhost:5000/pedidos/1",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-05-17T12:52:02.558Z",
+            "modified": "2024-05-17T12:59:28.607Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"pedido\":\"editar o pedido\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user1",
+                    "password": "senha1"
+                }
+            }
+        },
+        {
+            "_id": "09d3bd7a-c920-443a-b888-5e7d43fd1646",
+            "colId": "6b06135b-8230-4124-8066-cda97ee92224",
+            "containerId": "30614347-fc16-4e03-aa7c-a785b540ff88",
+            "name": "deletar/id",
+            "url": "http://localhost:5000/pedidos/2",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-05-17T12:52:29.780Z",
+            "modified": "2024-05-17T12:54:05.609Z",
+            "headers": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user1",
+                    "password": "senha1"
+                }
+            }
+        }
+    ],
+    "ref": "RbJOkIHQGwLwo_n7RNFJjXKSB-kzBWGv6xUR6dxAEBjKSgqklVnfnEYIOp4EUVszwyPOlaqzCcUEnso4R6RfXQ"
+}
