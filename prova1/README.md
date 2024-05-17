@@ -22,7 +22,7 @@ Entre na pasta em que deseja copiar este repositório e no terminal rode:
 git clone https://github.com/VZeferino/M10.git
 ```
 
-Após isso navegye até a pasta "prova1"
+Após isso navegue até a pasta "prova1"
 
 ### Executando a aplicação
 
