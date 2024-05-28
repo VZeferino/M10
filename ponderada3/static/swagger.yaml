@@ -1,0 +1,137 @@
+openapi: 3.0.0
+info:
+  title: Lista de Tarefas API
+  description: Uma API simples para gerenciamento de tarefas
+  version: "1.0"
+servers:
+  - url: http://localhost:5000/
+paths:
+  /tasks:
+    get:
+      summary: Lista todas as tarefas
+      operationId: listTasks
+      tags:
+        - Tarefas
+      responses:
+        '200':
+          description: Lista de tarefas retornada com sucesso
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
+      security:
+        - basicAuth: []
+    post:
+      summary: Cria uma nova tarefa
+      operationId: createTask
+      tags:
+        - Tarefas
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskCreate'
+      responses:
+        '201':
+          description: Tarefa criada com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+      security:
+        - basicAuth: []
+  /tasks/{task_id}:
+    get:
+      summary: Obtém detalhes de uma tarefa específica
+      operationId: getTask
+      tags:
+        - Tarefas
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Detalhes da tarefa
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '404':
+          description: Tarefa não encontrada
+      security:
+        - basicAuth: []
+    put:
+      summary: Atualiza uma tarefa existente
+      operationId: updateTask
+      tags:
+        - Tarefas
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskUpdate'
+      responses:
+        '200':
+          description: Tarefa atualizada com sucesso
+      security:
+        - basicAuth: []
+    delete:
+      summary: Deleta uma tarefa específica
+      operationId: deleteTask
+      tags:
+        - Tarefas
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Tarefa deletada com sucesso
+        '404':
+          description: Tarefa não encontrada
+      security:
+        - basicAuth: []
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+  schemas:
+    Task:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        title:
+          type: string
+          example: Terminar a documentação do Swagger
+    TaskCreate:
+      type: object
+      required:
+        - title
+      properties:
+        title:
+          type: string
+          example: Nova Tarefa
+    TaskUpdate:
+      type: object
+      properties:
+        title:
+          type: string
+          example: Tarefa Atualizada
