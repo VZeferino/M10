@@ -1,0 +1,70 @@
+2024-05-28 13:14:03,911:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 13:14:03,911:INFO: * Running on http://172.25.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 13:14:03,915:INFO: * Restarting with stat
+2024-05-28 13:14:39,467:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 13:14:39,468:INFO: * Running on http://172.25.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 13:14:39,469:INFO: * Restarting with stat
+2024-05-28 13:14:39,722:INFO: * Debugger PIN: 637-801-940
+2024-05-28 13:15:26,809:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 13:15:26,810:INFO: * Running on http://172.25.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 13:15:26,811:INFO: * Restarting with stat
+2024-05-28 13:17:15,562:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 13:17:15,562:INFO: * Running on http://172.25.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 13:17:15,563:INFO: * Restarting with stat
+2024-05-28 13:17:35,459:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 13:17:35,459:INFO: * Running on http://172.25.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 13:17:35,461:INFO: * Restarting with stat
+2024-05-28 13:18:58,002:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 13:18:58,002:INFO: * Running on http://172.26.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 13:18:58,004:INFO: * Restarting with stat
+2024-05-28 13:18:58,264:INFO: * Debugger PIN: 100-294-983
+2024-05-28 13:22:39,534:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 13:22:39,535:INFO: * Running on http://172.26.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 13:22:39,537:INFO: * Restarting with stat
+2024-05-28 13:22:39,872:INFO: * Debugger PIN: 100-294-983
+2024-05-28 13:23:20,300:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 13:23:20,301:INFO: * Running on http://172.26.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 13:23:20,302:INFO: * Restarting with stat
+2024-05-28 13:23:20,634:INFO: * Debugger PIN: 100-294-983
+2024-05-28 13:23:36,933:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 13:23:36,933:INFO: * Running on http://172.27.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 13:23:36,935:INFO: * Restarting with stat
+2024-05-28 13:23:37,223:WARNING: * Debugger is active!
+2024-05-28 13:23:37,225:INFO: * Debugger PIN: 911-075-263
+2024-05-28 13:24:13,468:INFO:172.27.0.1 - - [28/May/2024 13:24:13] "GET /users HTTP/1.1" 200 -
+2024-05-28 13:43:36,249:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 13:43:36,249:INFO: * Running on http://172.27.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 13:43:36,251:INFO: * Restarting with stat
+2024-05-28 13:43:36,509:INFO: * Debugger PIN: 911-075-263
+2024-05-28 13:43:46,774:WARNING:Failed login attempt for user: vitor@gmail.com
+2024-05-28 13:43:46,775:INFO:172.27.0.1 - - [28/May/2024 13:43:46] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2024-05-28 13:44:16,566:INFO:Login successful for user: admin@gmail.com
+2024-05-28 13:44:16,566:INFO:172.27.0.1 - - [28/May/2024 13:44:16] "POST /login HTTP/1.1" 200 -
+2024-05-28 14:16:21,247:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 14:16:21,248:INFO: * Running on http://172.27.0.2:5000/ (Press CTRL+C to quit)
+2024-05-28 14:16:21,250:INFO: * Restarting with stat
+2024-05-28 14:18:57,130:WARNING:Failed login attempt for user: vitor@gmail.com
+2024-05-28 14:18:57,131:INFO:192.168.95.73 - - [28/May/2024 14:18:57] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2024-05-28 14:19:11,307:INFO:Login successful for user: admin@gmail.com
+2024-05-28 14:19:11,307:INFO:192.168.95.73 - - [28/May/2024 14:19:11] "POST /login HTTP/1.1" 200 -
+2024-05-28 14:30:22,052:INFO:Login successful for user: admin@gmail.com
+2024-05-28 14:30:22,052:INFO:10.128.0.79 - - [28/May/2024 14:30:22] "POST /login HTTP/1.1" 200 -
+2024-05-28 14:31:09,582:INFO:New user added: vitor@gmail.com
+2024-05-28 14:31:09,583:INFO:10.128.0.79 - - [28/May/2024 14:31:09] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2024-05-28 14:31:24,755:INFO:10.128.0.79 - - [28/May/2024 14:31:24] "[31m[1mPOST /users HTTP/1.1[0m" 400 -
+2024-05-28 14:31:38,294:INFO:10.128.0.79 - - [28/May/2024 14:31:38] "[31m[1mPOST /users HTTP/1.1[0m" 400 -
+2024-05-28 14:32:37,069:INFO:New user added: gustavo@gmail.com
+2024-05-28 14:32:37,070:INFO:10.128.0.79 - - [28/May/2024 14:32:37] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2024-05-28 14:32:48,435:INFO:Login successful for user: gustavo@gmail.com
+2024-05-28 14:32:48,436:INFO:10.128.0.79 - - [28/May/2024 14:32:48] "POST /login HTTP/1.1" 200 -
