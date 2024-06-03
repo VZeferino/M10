@@ -3,5 +3,22 @@
          the Flutter tool needs it to communicate with the running application
          to allow setting breakpoints, to provide hot reload, etc.
     -->
+     <application
+        android:label="flutterzin"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/LaunchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

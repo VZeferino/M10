@@ -23,7 +23,7 @@ class _MinhaSegundaTelaState extends State<MinhaSegundaTela> {
     String username = "user1";
     String password = "senha1";
     String basicAuth = 'Basic ${base64Encode(utf8.encode('$username:$password'))}';
-    var url = Uri.parse('http://192.168.15.6:5000/tasks');
+    var url = Uri.parse('http://10.128.0.78:5000/tasks');
     Map<String, String> headers = {
       'Content-Type': 'application/json',
       'Authorization': basicAuth,
@@ -40,7 +40,7 @@ class _MinhaSegundaTelaState extends State<MinhaSegundaTela> {
   String username = "user1";
   String password = "senha1";
   String basicAuth = 'Basic ${base64Encode(utf8.encode('$username:$password'))}';
-  var url = Uri.parse('http://192.168.15.6:5000/tasks/$taskId');
+  var url = Uri.parse('http://10.128.0.78:5000/tasks/$taskId');
   Map<String, String> headers = {
     'Content-Type': 'application/json',
     'Authorization': basicAuth,
@@ -90,7 +90,7 @@ class _MinhaSegundaTelaState extends State<MinhaSegundaTela> {
   String username = "user1";
   String password = "senha1";
   String basicAuth = 'Basic ${base64Encode(utf8.encode('$username:$password'))}';
-  var url = Uri.parse('http://192.168.15.6:5000/tasks/$taskId');
+  var url = Uri.parse('http://10.128.0.78:5000/tasks/$taskId');
   Map<String, String> headers = {
     'Content-Type': 'application/json',
     'Authorization': basicAuth,
@@ -125,7 +125,7 @@ class _MinhaSegundaTelaState extends State<MinhaSegundaTela> {
               String password = "senha1";
               String basicAuth = 'Basic ${base64Encode(utf8.encode('$username:$password'))}';
               String saida = '';
-              var url = Uri.parse('http://192.168.15.6:5000/tasks');
+              var url = Uri.parse('http://10.128.0.78:5000/tasks');
               Map<String, String> headers = {
                 'Content-Type': 'application/json',
                 'Authorization': basicAuth,
