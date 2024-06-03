@@ -49,10 +49,10 @@ flutter run
 ```
 
 ### Funcionalidades
-Tela de Login: Permite que o usuário faça login com e-mail e senha. Também há uma opção para registro de novos usuários.
-Tela Inicial: Após o login, o usuário é levado para a tela inicial onde pode acessar a tela de processamento de imagem.
-Tela de Processamento de Imagem: O usuário seleciona uma imagem da galeria, envia para o backend, e a imagem é processada com um filtro preto e branco.
-Notificação: Após o processamento da imagem, o usuário recebe uma notificação informando que a imagem foi processada com sucesso e ela é exibida na tela.
+- Tela de Login: Permite que o usuário faça login com e-mail e senha. Também há uma opção para registro de novos usuários.
+- Tela Inicial: Após o login, o usuário é levado para a tela inicial onde pode acessar a tela de processamento de imagem.
+- Tela de Processamento de Imagem: O usuário seleciona uma imagem da galeria, envia para o backend, e a imagem é processada com um filtro preto e branco.
+- Notificação: Após o processamento da imagem, o usuário recebe uma notificação informando que a imagem foi processada com sucesso e ela é exibida na tela.
 
 ## Demonstração
 Um vídeo demonstrativo das funcionalidades da aplicação foi produzido. Para acessar [clique aqui](https://drive.google.com/file/d/1UWcIQCX6PvDsi4fTxH3IdSZrM9Wcwjb3/view?usp=sharing)
