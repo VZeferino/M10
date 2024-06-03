@@ -44,3 +44,19 @@
 2024-06-03 14:33:51,306:INFO:10.128.0.17 - - [03/Jun/2024 14:33:51] "POST /login HTTP/1.1" 200 -
 2024-06-03 14:36:58,537:INFO:Login successful for user: admin@gmail.com
 2024-06-03 14:36:58,537:INFO:10.128.0.17 - - [03/Jun/2024 14:36:58] "POST /login HTTP/1.1" 200 -
+2024-06-03 14:50:18,515:INFO:Login successful for user: admin@gmail.com
+2024-06-03 14:50:18,515:INFO:10.128.0.17 - - [03/Jun/2024 14:50:18] "POST /login HTTP/1.1" 200 -
+2024-06-03 14:53:17,818:INFO:Login successful for user: admin@gmail.com
+2024-06-03 14:53:17,819:INFO:10.128.0.17 - - [03/Jun/2024 14:53:17] "POST /login HTTP/1.1" 200 -
+2024-06-03 14:55:12,928:INFO:Login successful for user: admin@gmail.com
+2024-06-03 14:55:12,928:INFO:10.128.0.17 - - [03/Jun/2024 14:55:12] "POST /login HTTP/1.1" 200 -
+2024-06-03 14:57:38,831:INFO:Login successful for user: admin@gmail.com
+2024-06-03 14:57:38,833:INFO:10.128.0.17 - - [03/Jun/2024 14:57:38] "POST /login HTTP/1.1" 200 -
+2024-06-03 14:59:56,500:WARNING:Failed login attempt for user: admin@gmail.com
+2024-06-03 14:59:56,501:INFO:10.128.0.17 - - [03/Jun/2024 14:59:56] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2024-06-03 15:00:00,090:INFO:Login successful for user: admin@gmail.com
+2024-06-03 15:00:00,090:INFO:10.128.0.17 - - [03/Jun/2024 15:00:00] "POST /login HTTP/1.1" 200 -
+2024-06-03 15:00:22,203:INFO:New user added: admin1@gmail.com
+2024-06-03 15:00:22,204:INFO:10.128.0.17 - - [03/Jun/2024 15:00:22] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2024-06-03 15:00:31,956:INFO:Login successful for user: admin1@gmail.com
+2024-06-03 15:00:31,957:INFO:10.128.0.17 - - [03/Jun/2024 15:00:31] "POST /login HTTP/1.1" 200 -
