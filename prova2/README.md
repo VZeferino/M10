@@ -24,12 +24,12 @@ docker compose up
 
 A aplicação estará acessível em `http://localhost:8000`
 
+![image](https://github.com/VZeferino/M10/assets/99190423/4396ec01-8ffd-4ec2-961c-be9a72d56c71)
 
 ### Teste de que a roda está funcionando
 
 ##### FASTAPI
-![image](https://github.com/VZeferino/M10/assets/99190423/fd677da6-b110-43bc-aa41-13a84af24a65)
-
+![image](https://github.com/VZeferino/M10/assets/99190423/ad8359e6-b051-4850-a7cc-afffc8ef5964)
 
 ### Sistema de logs
 
