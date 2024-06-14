@@ -1,11 +1,22 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
+from log_config import LoggerSetup
 import logging
 
 app = FastAPI()
 
-logging.basicConfig(filename='informations.log', level=logging.WARNING, format='%(asctime)s:%(levelname)s:%(message)s')
+# Cria um logger raiz
+logger_setup = LoggerSetup()
+
+# Adiciona o logger para o módulo
+logger = logging.getLogger(__name__)
+
+logging.basicConfig(
+    filename='informations_blog.log',
+    level=logging.WARNING, 
+    format='%(asctime)s:%(levelname)s:%(message)s'
+)
 
 blog_posts = []
 
@@ -33,7 +44,6 @@ def get_blog_post(id: int):
             return post
     logging.error(f'Blog post with id {id} not found')
     raise HTTPException(status_code=404, detail='Post not found')
-    
 
 @app.delete('/blog/{id}', status_code=200)
 def delete_blog_post(id: int):
