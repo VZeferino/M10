@@ -33,6 +33,15 @@ A aplicação estará acessível em `http://localhost:8000`
 
 ### Sistema de logs
 
+Foi criado além do config dentro do arquivo 
+logging.basicConfig(
+    filename='informations_blog.log',
+    level=logging.WARNING, 
+    format='%(asctime)s:%(levelname)s:%(message)s'
+)
+
+Não identifiquei o erro mas não estava salvando na raiz do projeto.
+
 ![image](https://github.com/VZeferino/M10/assets/99190423/f6e8457d-ea94-497e-9b53-7e05aa8483b7)
 
 ### Testes de rota
