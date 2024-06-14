@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  login_service:
+    build: .
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+    volumes:
+      - .:/app
