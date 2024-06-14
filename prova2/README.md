@@ -33,6 +33,7 @@ A aplicação estará acessível em `http://localhost:8000`
 
 ### Sistema de logs
 
+![image](https://github.com/VZeferino/M10/assets/99190423/f6e8457d-ea94-497e-9b53-7e05aa8483b7)
 
 ### Testes de rota
 
