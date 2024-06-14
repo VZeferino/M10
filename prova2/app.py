@@ -6,10 +6,8 @@ import logging
 
 app = FastAPI()
 
-# Cria um logger raiz
 logger_setup = LoggerSetup()
 
-# Adiciona o logger para o módulo
 logger = logging.getLogger(__name__)
 
 logging.basicConfig(
