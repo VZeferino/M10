@@ -1,0 +1,81 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "prova2",
+    "collectionId": "187f3d4e-ad8c-42e2-87c8-093e4628633d",
+    "dateExported": "2024-06-14T13:42:37.492Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b3befd4e-0415-4a9f-b855-bae3f56891e4",
+            "colId": "187f3d4e-ad8c-42e2-87c8-093e4628633d",
+            "containerId": "",
+            "name": "criar",
+            "url": "http://localhost:8000/blog",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-14T13:39:10.502Z",
+            "modified": "2024-06-14T13:39:32.800Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":1,\n  \"title\":\"Teste\",\n  \"content\":\"Vai dar bom\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "486a5c60-f5a8-4ab7-a6f3-79c36e020b75",
+            "colId": "187f3d4e-ad8c-42e2-87c8-093e4628633d",
+            "containerId": "",
+            "name": "pegar_todos",
+            "url": "http://localhost:8000/blog",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-14T13:39:52.352Z",
+            "modified": "2024-06-14T13:39:58.812Z",
+            "headers": []
+        },
+        {
+            "_id": "80bd3976-78c1-4852-a037-b4376c6c8afb",
+            "colId": "187f3d4e-ad8c-42e2-87c8-093e4628633d",
+            "containerId": "",
+            "name": "pegar_unico",
+            "url": "http://localhost:8000/blog/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-06-14T13:40:36.910Z",
+            "modified": "2024-06-14T13:42:12.134Z",
+            "headers": []
+        },
+        {
+            "_id": "797f4a9e-c1e0-439b-8f20-d25bee82b066",
+            "colId": "187f3d4e-ad8c-42e2-87c8-093e4628633d",
+            "containerId": "",
+            "name": "deletar",
+            "url": "http://localhost:8000/blog/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-06-14T13:41:19.835Z",
+            "modified": "2024-06-14T13:41:27.444Z",
+            "headers": []
+        },
+        {
+            "_id": "2b20533f-9395-4fd8-a0e5-25f0bd874a57",
+            "colId": "187f3d4e-ad8c-42e2-87c8-093e4628633d",
+            "containerId": "",
+            "name": "editar",
+            "url": "http://localhost:8000/blog/1",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-06-14T13:41:36.135Z",
+            "modified": "2024-06-14T13:42:06.344Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":1,\n  \"title\":\"Teste1\",\n  \"content\":\"Vai dar bom\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "2jrBu4dZ19dNl92359nLXF1cbIT-xOmfc6yKWEUgVYwDLbifoVWo63RNQZcN8aFMb2gZZEDz-F_KgkcDO0sWgQ"
+}
