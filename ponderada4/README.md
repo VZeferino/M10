@@ -1,6 +1,6 @@
-# API de Gerenciamento de Tarefas
+# Projeto de Sistema de Gerenciamento de Tarefas com Gateway e Logging
 
-Uma API RESTful para gerenciamento de tarefas, construída com Flask. Esta API permite listar, adicionar, editar e remover tarefas com autenticação básica HTTP.
+Este projeto é uma API RESTful para gerenciamento de tarefas, construída com Flask, que inclui um gateway e um sistema de logging. Ele permite listar, adicionar, editar e remover tarefas, além de gerenciar usuários e eventos. O sistema utiliza múltiplos serviços e Docker Compose para facilitar a configuração e execução.
 
 ## Começando
 
@@ -20,17 +20,28 @@ Para iniciar o ambiente utilizando Docker Compose, execute:
 docker compose up
 ```
 
-Após executar, a API estará acessível via http://localhost:5000/.
+Após executar, os serviços estarão acessíveis nas seguintes URLs:
 
-## App Mobile em Flutter
-A aplicação móvel em Flutter permite interagir com a API para adicionar, editar e excluir tarefas. Para rodar a aplicação no Android, conecte seu dispositivo ao computador ou utilize um simulador.
+- Login Service: http://localhost:5000/
+- Image Service: http://localhost:5001/
+- Event Service: http://localhost:5002/
+- Gateway Service: http://localhost:5003/
 
-## Demonstração
-Um vídeo demonstrativo das funcionalidades da aplicação foi produzido. Para acessar clique [aqui](https://youtu.be/jmXzh1bQZ2o?si=nbF49r2hd2HdNqwV)
+## Serviços Disponíveis
 
-## Documentação
-A documentação completa da API está disponível via Swagger UI em http://localhost:5000/docs, onde você pode testar todas as operações diretamente.
+### Serviço de Login (Login Service)
+Este serviço gerencia a autenticação de usuários e utiliza Flask com autenticação básica HTTP.
+
+### Serviço de Imagem (Image Service)
+Serviço responsável por gerenciar operações relacionadas a imagens.
+
+### Serviço de Eventos (Event Service)
+Este serviço gerencia a criação, leitura, atualização e exclusão (CRUD) de eventos. Ele é um exemplo de novo serviço adicionado ao sistema.
+
+### Gateway Service
+O gateway atua como um ponto de entrada para o sistema, encaminhando as solicitações para os serviços apropriados.
+
 
 ## Desenvolvimento
-Este projeto foi desenvolvido considerando a eficiência e praticidade para gestão de tarefas simples. A escolha entre uma arquitetura de microserviços ou monolítica e entre sincronia ou assincronia deve ser baseada nas necessidades específicas de uso. Eu escolhi a que eu escolhi por ser mais simples :) 
+Este projeto foi desenvolvido com foco na modularidade e escalabilidade, utilizando uma arquitetura de microserviços. Cada serviço é independente e pode ser escalado ou modificado sem impactar os outros serviços. O uso de Docker e Docker Compose facilita o desenvolvimento, teste e implantação do sistema.
 
